@@ -1,28 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <RandomNumberCard />
+        </div>
+        <div class="column is-one-third">
+          <WeatherCard />
+        </div>
+        <div class="column is-one-third">
+          <DollarPriceCard />
+        </div>
+        <div class="column is-one-third">
+          <JokeCard />
+        </div>
+        <div class="column is-one-third">
+          <BitcoinPriceCard />
+        </div>
+        <div class="column is-one-third">
+          <CalendarCard />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RandomNumberCard from './components/RandomNumberCard.vue'
+import WeatherCard from './components/WeatherCard.vue'
+import DollarPriceCard from './components/DollarPriceCard.vue'
+import JokeCard from './components/JokeCard.vue'
+import BitcoinPriceCard from './components/BitcoinPriceCard.vue'
+import CalendarCard from './components/CalendarCard.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    RandomNumberCard,
+    WeatherCard,
+    DollarPriceCard,
+    JokeCard,
+    BitcoinPriceCard,
+    CalendarCard
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
