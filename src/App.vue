@@ -20,6 +20,10 @@
         <div class="column is-one-third">
           <CalendarCard />
         </div>
+        <div class="column is-one-third">
+          <FindPrimes />
+        </div>
+        
       </div>
     </div>
   </section>
@@ -32,6 +36,7 @@ import DollarPriceCard from './components/DollarPriceCard.vue'
 import JokeCard from './components/JokeCard.vue'
 import BitcoinPriceCard from './components/BitcoinPriceCard.vue'
 import CalendarCard from './components/CalendarCard.vue'
+import FindPrimes from './components/FindPrimes.vue'
 
 export default {
   components: {
@@ -40,7 +45,8 @@ export default {
     DollarPriceCard,
     JokeCard,
     BitcoinPriceCard,
-    CalendarCard
+    CalendarCard,
+    FindPrimes
   }
 }
 </script>
